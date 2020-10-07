@@ -3,7 +3,7 @@ date: "2020-10-03"
 title: "Publications"
 ---
 
-## Conferences
+## Conference Papers
 
 Author names appear in alphabetical order.
 
@@ -13,8 +13,7 @@ OSDI 2020
 1. **Efficient Multi-word Compare and Swap**  
 Rachid Guerraoui, Alex Kogan, Virendra Marathe, Igor Zablotchi  
 DISC 2020  
-[Conference version](https://drops.dagstuhl.de/opus/volltexte/2020/13082/pdf/LIPIcs-DISC-2020-4.pdf) [Full version](https://arxiv.org/abs/2008.02527)
-
+[Conference version](https://drops.dagstuhl.de/opus/volltexte/2020/13082/pdf/LIPIcs-DISC-2020-4.pdf) [Full version](https://arxiv.org/abs/2008.02527) 
 1. **The Impact of RDMA on Agreement**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra Marathe, Igor Zablotchi  
 PODC 2019  
@@ -43,6 +42,10 @@ SPAA 2016
 
 
 ## Talks
+
+**Efficient Multi-word Compare and Swap**  
+DISC 2020  
+[Video](https://www.youtube.com/watch?v=905yWpHB5ns)
 
 **The Inherent Cost of Remembering Consistently**  
 SPAA 2018
