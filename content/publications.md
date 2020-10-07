@@ -8,14 +8,14 @@ title: "Publications"
 Author names appear in alphabetical order.
 
 1. **Microsecond Consensus for Microsecond Applications**<br/>
-Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra Marathe, Athanasios Xygkis, Igor Zablotchi  
+Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra J. Marathe, Athanasios Xygkis, Igor Zablotchi  
 OSDI 2020
 1. **Efficient Multi-word Compare and Swap**  
-Rachid Guerraoui, Alex Kogan, Virendra Marathe, Igor Zablotchi  
+Rachid Guerraoui, Alex Kogan, Virendra J. Marathe, Igor Zablotchi  
 DISC 2020  
 [Conference version](https://drops.dagstuhl.de/opus/volltexte/2020/13082/pdf/LIPIcs-DISC-2020-4.pdf) [Full version](https://arxiv.org/abs/2008.02527) 
 1. **The Impact of RDMA on Agreement**<br/>
-Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra Marathe, Igor Zablotchi  
+Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra J. Marathe, Igor Zablotchi  
 PODC 2019  
 [Conference version](https://infoscience.epfl.ch/record/275877?ln=en) [Full version](https://arxiv.org/abs/1905.12143)
 1. **The Inherent Cost of Remembering Consistently**  
