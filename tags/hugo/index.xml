@@ -1,59 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Igor Zablotchi</title>
-    <link>https://zablotchi.github.io/</link>
-    <description>Recent content on Igor Zablotchi</description>
+    <title>hugo on Igor Zablotchi</title>
+    <link>https://zablotchi.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Igor Zablotchi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jun 2017 18:27:58 +0100</lastBuildDate><atom:link href="https://zablotchi.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Publications</title>
-      <link>https://zablotchi.github.io/publications/</link>
-      <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zablotchi.github.io/publications/</guid>
-      <description>Conferences Author names appear in alphabetical order.
-  Microsecond Consensus for Microsecond Applications Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra Marathe, Athanasios Xygkis, Igor Zablotchi
-OSDI 2020
-  Efficient Multi-word Compare and Swap
-Rachid Guerraoui, Alex Kogan, Virendra Marathe, Igor Zablotchi
-DISC 2020
-Conference version Full version
-  The Impact of RDMA on Agreement Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra Marathe, Igor Zablotchi
-PODC 2019</description>
-    </item>
-    
-    <item>
-      <title>cmd Test</title>
-      <link>https://zablotchi.github.io/cmd-test/</link>
-      <pubDate>Tue, 04 Aug 2020 21:05:05 -0500</pubDate>
-      
-      <guid>https://zablotchi.github.io/cmd-test/</guid>
-      <description>Testing out GitHub issue https://github.com/zwbetz-gh/cupper-hugo-theme/issues/42
-Line 1 Line 2 Line 3  </description>
-    </item>
-    
-    <item>
-      <title>Multiple Expandable Test</title>
-      <link>https://zablotchi.github.io/multiple-expandable-test/</link>
-      <pubDate>Wed, 17 Jun 2020 22:01:14 -0500</pubDate>
-      
-      <guid>https://zablotchi.github.io/multiple-expandable-test/</guid>
-      <description>Testing out GitHub issue https://github.com/zwbetz-gh/cupper-hugo-theme/issues/36 &amp;ndash; Multiple expandable shortcodes do not work if they have the same inner text.
- expandable 1     Same inner text.    expandable 2     Same inner text.    expandable 3     Different inner text.   </description>
-    </item>
-    
-    <item>
-      <title>Special Character Test</title>
-      <link>https://zablotchi.github.io/special-character-test/</link>
-      <pubDate>Tue, 10 Sep 2019 20:26:08 -0500</pubDate>
-      
-      <guid>https://zablotchi.github.io/special-character-test/</guid>
-      <description>Testing out GitHub issue https://github.com/zwbetz-gh/cupper-hugo-theme/issues/16
-Cette phrase prononcée par Greta Thunberg</description>
-    </item>
-    
+    <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zablotchi.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Katex Math Typesetting</title>
       <link>https://zablotchi.github.io/katex-math-typesetting/</link>
@@ -86,25 +39,6 @@ This text will be bold</description>
       
       <guid>https://zablotchi.github.io/cupper-shortcodes/</guid>
       <description>blockquote {{&amp;lt; blockquote author=&amp;quot;Carl Jung&amp;quot; &amp;gt;}} Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity. {{&amp;lt; /blockquote &amp;gt;}}   Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness.</description>
-    </item>
-    
-    <item>
-      <title>NASA Images</title>
-      <link>https://zablotchi.github.io/nasa-images/</link>
-      <pubDate>Thu, 27 Dec 2018 20:46:49 -0600</pubDate>
-      
-      <guid>https://zablotchi.github.io/nasa-images/</guid>
-      <description>The below images are from the NASA Image and Video Library &amp;ndash; indulge yourself, revel in their beauty.
- The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth. Credits.    The Moon is an astronomical body that orbits planet Earth and is Earth&amp;rsquo;s only permanent natural satellite.</description>
-    </item>
-    
-    <item>
-      <title>Quotes by Carl Jung</title>
-      <link>https://zablotchi.github.io/quotes-by-carl-jung/</link>
-      <pubDate>Wed, 26 Dec 2018 00:29:41 -0600</pubDate>
-      
-      <guid>https://zablotchi.github.io/quotes-by-carl-jung/</guid>
-      <description>Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity. &amp;mdash; Carl Jung   The least of things with a meaning is worth more in life than the greatest of things without it. &amp;mdash; Carl Jung   Who looks outside, dreams; who looks inside, awakes.</description>
     </item>
     
     <item>
