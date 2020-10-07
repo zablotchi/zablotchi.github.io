@@ -50,9 +50,6 @@ menu:
     - name: CV
       url: /cv.pdf
       weight: 3
-    - name: Blog
-      url: /post/
-      weight: 4
 
 
 markup:
