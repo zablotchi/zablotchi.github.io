@@ -18,7 +18,9 @@ My current research focuses on deep learning, specifically on ways to learn with
 
 Author names appear in alphabetical order.
 
-
+1. **uBFT: Microsecond-scale BFT using Disaggregated Memory**<br/>
+Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
+ASPLOS 2023 (to appear)<br/>
 1. **Frugal Byzantine Computing**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Dalia Papuc, Athanasios Xygkis, Igor Zablotchi.<br/>
 DISC 2021<br/>
