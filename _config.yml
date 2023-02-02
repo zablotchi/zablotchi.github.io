@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Igor Zablotchi"
 title_separator          : "-"
 name                     : &name "Igor Zablotchi"
-description              : &description "Postdoctoral Fellow @ MIT CSAIL"
+description              : &description "Research Scientist @ Mysten Labs"
 url                      : https://zablotchi.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zablotchi.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Igor Zablotchi"
   avatar           : "igor_photo.jpeg"
-  bio              : "Postdoctoral Fellow @ MIT CSAIL"
-  location         : "Cambridge, MA"
+  bio              : "Research Scientist @ Mysten Labs"
+  location         : "Zürich, Switzerland"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=D6k7TYoAAAAJ"
-  email            : "igorz@mit.edu"
+  email            : "igor@mystenlabs.com"
   researchgate     :  
   uri              :
   bitbucket        :
