@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoctoral fellow in [Nir Shavit](https://people.csail.mit.edu/shanir/)'s group at [MIT CSAIL](https://www.csail.mit.edu/). My research is generously supported by a [SNSF Early Postdoc.Mobility](https://www.snf.ch/en/f6JZyI4uQ1mNeq3J/funding/funding/discontinued-funding-schemes/early-postdoc-mobility) fellowship. 
+As of February 2023, I have joined Mysten Labs as a Research Scientist.
+
+Before Mysten Labs, I was a postdoctoral fellow in [Nir Shavit](https://people.csail.mit.edu/shanir/)'s group at [MIT CSAIL](https://www.csail.mit.edu/). My postdoctoral research was generously supported by a [SNSF Early Postdoc.Mobility](https://www.snf.ch/en/f6JZyI4uQ1mNeq3J/funding/funding/discontinued-funding-schemes/early-postdoc-mobility) fellowship. 
 
 Prior to joining MIT, I completed my PhD in the [Distributed Computing Laboratory](https://dcl.epfl.ch/site/) at EPFL. I was advised by [Rachid Guerraoui](http://lpdwww.epfl.ch/rachid/). My PhD work was supported in part by an [ERC grant](https://cordis.europa.eu/project/id/339539). My [dissertation](https://infoscience.epfl.ch/record/281678?ln=en) was awarded an Honorable Mention for the [EuroSys Needham PhD Award](https://www.eurosys.org/awards/roger-needham-phd-award), as well as an [EPFL Thesis Distinction](https://www.epfl.ch/education/phd/phd-awards/thesis-distinction/).
 
