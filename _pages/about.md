@@ -23,6 +23,7 @@ Author names appear in alphabetical order.
 1. **uBFT: Microsecond-scale BFT using Disaggregated Memory**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
 ASPLOS 2023 (to appear)<br/>
+[[Full Version]](https://arxiv.org/pdf/2210.17174.pdf)
 1. **Frugal Byzantine Computing**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Dalia Papuc, Athanasios Xygkis, Igor Zablotchi.<br/>
 DISC 2021<br/>
@@ -74,6 +75,12 @@ SPAA 2016
 [[Conference Version]](https://infoscience.epfl.ch/record/223694?ln=en)
 [[Full Version]](https://infoscience.epfl.ch/record/218413?ln=en)
 
+## Journal Articles
+
+1. **Leaderless Consensus**<br/>
+Karolos Antoniadis, Julien Benhaim, Antoine Desjardins, Poroma Elias, Vincent Gramoli, Rachid Guerraoui, Gauthier Voron and Igor Zablotchi.<br/>
+JPDC (to appear).<br/>
+[[Paper]](https://doi.org/10.1016/j.jpdc.2023.01.009)
 
 ## Talks
 
