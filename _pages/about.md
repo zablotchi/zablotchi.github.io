@@ -85,7 +85,7 @@ SPAA 2016
 1. **Honeycomb: ordered key-value store acceleration on an FPGA-based SmartNIC**<br/>
 Junyi Liu, Aleksandar Dragojevic, Shane Flemming, Antonios Katsarakis, Dario Korolija, Igor Zablotchi, Ho-cheung Ng, Anuj Kalia, Miguel Castro.<br/>
 IEEE Transactions on Computers, 2023.<br/>
-[[Paper]](https://doi.org/10.1016/j.jpdc.2023.01.009)
+[[Paper]](https://ieeexplore.ieee.org/document/10367763)
 1. **Leaderless Consensus**<br/>
 Karolos Antoniadis, Julien Benhaim, Antoine Desjardins, Poroma Elias, Vincent Gramoli, Rachid Guerraoui, Gauthier Voron and Igor Zablotchi.<br/>
 JPDC, 2023.<br/>
