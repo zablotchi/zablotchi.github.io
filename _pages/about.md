@@ -20,9 +20,14 @@ My current research focuses on deep learning, specifically on ways to learn with
 
 Author names appear in alphabetical order.
 
+1. **Parallel k-Core Decomposition with Batched Updates and Asynchronous Reads**<br/>
+Quanquan C. Liu, Julian Shun, Igor Zablotchi.<br/>
+PPoPP 2024 (to appear)<br/>
+[[Full Version]](https://arxiv.org/pdf/2401.08015.pdf)
 1. **uBFT: Microsecond-scale BFT using Disaggregated Memory**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
-ASPLOS 2023 (to appear)<br/>
+ASPLOS 2023<br/>
+[[Conference Version]](https://dl.acm.org/doi/10.1145/3575693.3575732)
 [[Full Version]](https://arxiv.org/pdf/2210.17174.pdf)
 1. **Frugal Byzantine Computing**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Dalia Papuc, Athanasios Xygkis, Igor Zablotchi.<br/>
@@ -77,10 +82,15 @@ SPAA 2016
 
 ## Journal Articles
 
+1. **Honeycomb: ordered key-value store acceleration on an FPGA-based SmartNIC**<br/>
+Junyi Liu, Aleksandar Dragojevic, Shane Flemming, Antonios Katsarakis, Dario Korolija, Igor Zablotchi, Ho-cheung Ng, Anuj Kalia, Miguel Castro.<br/>
+IEEE Transactions on Computers, 2023.<br/>
+[[Paper]](https://doi.org/10.1016/j.jpdc.2023.01.009)
 1. **Leaderless Consensus**<br/>
 Karolos Antoniadis, Julien Benhaim, Antoine Desjardins, Poroma Elias, Vincent Gramoli, Rachid Guerraoui, Gauthier Voron and Igor Zablotchi.<br/>
-JPDC (to appear).<br/>
+JPDC, 2023.<br/>
 [[Paper]](https://doi.org/10.1016/j.jpdc.2023.01.009)
+
 
 ## Talks
 
