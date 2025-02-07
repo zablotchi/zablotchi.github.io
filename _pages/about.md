@@ -8,21 +8,39 @@ redirect_from:
   - /about.html
 ---
 
-As of February 2023, I have joined Mysten Labs as a Research Scientist.
+As of January 2023, I have joined Mysten Labs as a Senior Research Scientist.
 
 Before Mysten Labs, I was a postdoctoral fellow in [Nir Shavit](https://people.csail.mit.edu/shanir/)'s group at [MIT CSAIL](https://www.csail.mit.edu/). My postdoctoral research was generously supported by a [SNSF Early Postdoc.Mobility](https://www.snf.ch/en/f6JZyI4uQ1mNeq3J/funding/funding/discontinued-funding-schemes/early-postdoc-mobility) fellowship. 
 
 Prior to joining MIT, I completed my PhD in the [Distributed Computing Laboratory](https://dcl.epfl.ch/site/) at EPFL. I was advised by [Rachid Guerraoui](http://lpdwww.epfl.ch/rachid/). My PhD work was supported in part by an [ERC grant](https://cordis.europa.eu/project/id/339539). My [dissertation](https://infoscience.epfl.ch/record/281678?ln=en) was awarded an Honorable Mention for the [EuroSys Needham PhD Award](https://www.eurosys.org/awards/roger-needham-phd-award), as well as an [EPFL Thesis Distinction](https://www.epfl.ch/education/phd/phd-awards/thesis-distinction/).
 
-My current research focuses on deep learning, specifically on ways to learn with less data, and on efficiently leveraging very large deep learning models. I am also interested in the theory and practice of shared memory algorithms. My research has explored the impact of emerging technologies, such as RDMA and persistent memory, on the way that we build distributed systems.
+My current research focuses on the theory and practice of distributed computing, in both shared memory and message passing, with a focus on blockchain. My research has explored the impact of emerging technologies, such as RDMA and persistent memory, on the way that we build distributed systems.
 
 ## Conference Papers
 
 Author names appear in alphabetical order.
 
+1. **Pilotfish: Distributed Execution for Elastic Blockchains**<br/>
+Quentin Kniep, Lefteris Kokoris-Kogias, Alberto Sonnino, Igor Zablotchi, Nuda Zhang<br/>
+FC 2025 (to appear)<br/>
+1. **Partial Synchrony for Free: New Upper Bounds for Byzantine Agreement**<br/>
+Pierre Civit, Muhammad Ayaz Dzulfikar, Seth Gilbert, Rachid Guerraoui, Jovan Komatovic, Manuel Vidigueira, Igor Zablotchi<br/>
+SODA 2025<br/>
+[[Conference Version]](https://epubs.siam.org/doi/10.1137/1.9781611978322.144)
+1. **DSig: Breaking the Barrier of Signatures in Data Centers**<br/>
+Marcos K. Aguilera, Clément Burgelin, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
+OSDI 2024<br/>
+[[Conference Version]](https://www.usenix.org/conference/osdi24/presentation/aguilera)
+1. **SWARM: Replicating Shared Disaggregated-Memory Data in No Time**<br/>
+Antoine Murat, Clément Burgelin, Athanasios Xygkis, Igor Zablotchi, Marcos Kawazoe Aguilera, Rachid Guerraoui.<br/>
+SOSP 2024<br/>
+[[Conference Version]](https://dl.acm.org/doi/10.1145/3694715.3695945)
+1. **Efficient Signature-Free Validated Agreement**<br/>
+Pierre Civit, Muhammad Ayaz Dzulfikar, Seth Gilbert, Rachid Guerraoui, Jovan Komatovic, Manuel Vidigueira, Igor Zablotchi.<br/>
+DISC 2024<br/>
 1. **Parallel k-Core Decomposition with Batched Updates and Asynchronous Reads**<br/>
 Quanquan C. Liu, Julian Shun, Igor Zablotchi.<br/>
-PPoPP 2024 (to appear)<br/>
+PPoPP 2024<br/>
 [[Full Version]](https://arxiv.org/pdf/2401.08015.pdf)
 1. **uBFT: Microsecond-scale BFT using Disaggregated Memory**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
