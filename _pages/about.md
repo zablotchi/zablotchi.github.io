@@ -23,18 +23,22 @@ Author names appear in alphabetical order.
 1. **Pilotfish: Distributed Execution for Elastic Blockchains**<br/>
 Quentin Kniep, Lefteris Kokoris-Kogias, Alberto Sonnino, Igor Zablotchi, Nuda Zhang<br/>
 FC 2025 (to appear)<br/>
+[[arXiv]](https://arxiv.org/abs/2401.16292)<br/>
 1. **Partial Synchrony for Free: New Upper Bounds for Byzantine Agreement**<br/>
 Pierre Civit, Muhammad Ayaz Dzulfikar, Seth Gilbert, Rachid Guerraoui, Jovan Komatovic, Manuel Vidigueira, Igor Zablotchi<br/>
 SODA 2025<br/>
 [[Conference Version]](https://epubs.siam.org/doi/10.1137/1.9781611978322.144)
+[[arXiv]](https://arxiv.org/abs/2402.10059)
 1. **DSig: Breaking the Barrier of Signatures in Data Centers**<br/>
 Marcos K. Aguilera, Clément Burgelin, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
 OSDI 2024<br/>
 [[Conference Version]](https://www.usenix.org/conference/osdi24/presentation/aguilera)
+[[arXiv]](https://arxiv.org/abs/2406.07215)
 1. **SWARM: Replicating Shared Disaggregated-Memory Data in No Time**<br/>
 Antoine Murat, Clément Burgelin, Athanasios Xygkis, Igor Zablotchi, Marcos Kawazoe Aguilera, Rachid Guerraoui.<br/>
 SOSP 2024<br/>
 [[Conference Version]](https://dl.acm.org/doi/10.1145/3694715.3695945)
+[[arXiv]](https://arxiv.org/abs/2409.16258)
 1. **Efficient Signature-Free Validated Agreement**<br/>
 Pierre Civit, Muhammad Ayaz Dzulfikar, Seth Gilbert, Rachid Guerraoui, Jovan Komatovic, Manuel Vidigueira, Igor Zablotchi.<br/>
 DISC 2024<br/>
@@ -46,17 +50,17 @@ PPoPP 2024<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
 ASPLOS 2023<br/>
 [[Conference Version]](https://dl.acm.org/doi/10.1145/3575693.3575732)
-[[Full Version]](https://arxiv.org/pdf/2210.17174.pdf)
+[[arXiv]](https://arxiv.org/pdf/2210.17174.pdf)
 1. **Frugal Byzantine Computing**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Dalia Papuc, Athanasios Xygkis, Igor Zablotchi.<br/>
 DISC 2021<br/>
 [[Conference Version]](https://drops.dagstuhl.de/opus/volltexte/2021/14805/pdf/LIPIcs-DISC-2021-3.pdf) 
-[[Full Version]](https://arxiv.org/abs/2108.01330) 
+[[arXiv]](https://arxiv.org/abs/2108.01330) 
 [[Talk]](https://www.youtube.com/watch?v=663fVh5rSVE)
 1. **Leaderless Consensus**<br/>
 Karolos Antoniadis, Antoine Desjardins, Vincent Gramoli, Rachid Guerraoui, Igor Zablotchi.<br/>
 ICDCS 2021. **Best paper award!**<br/>
-[[Full Version]](https://infoscience.epfl.ch/record/282657?ln=en) [[Talk]](https://www.youtube.com/watch?v=gPrdhebjTM0)
+[[arXiv]](https://infoscience.epfl.ch/record/282657?ln=en) [[Talk]](https://www.youtube.com/watch?v=gPrdhebjTM0)
 1. **Microsecond Consensus for Microsecond Applications**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra J. Marathe, Athanasios Xygkis, Igor Zablotchi.<br/> 
 OSDI 2020<br/>
@@ -102,7 +106,7 @@ SPAA 2016
 
 1. **Honeycomb: ordered key-value store acceleration on an FPGA-based SmartNIC**<br/>
 Junyi Liu, Aleksandar Dragojevic, Shane Flemming, Antonios Katsarakis, Dario Korolija, Igor Zablotchi, Ho-cheung Ng, Anuj Kalia, Miguel Castro.<br/>
-IEEE Transactions on Computers, 2023.<br/>
+IEEE Transactions on Computers, 2024.<br/>
 [[Paper]](https://ieeexplore.ieee.org/document/10367763)
 1. **Leaderless Consensus**<br/>
 Karolos Antoniadis, Julien Benhaim, Antoine Desjardins, Poroma Elias, Vincent Gramoli, Rachid Guerraoui, Gauthier Voron and Igor Zablotchi.<br/>
