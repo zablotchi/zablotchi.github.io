@@ -8,22 +8,43 @@ redirect_from:
   - /about.html
 ---
 
-As of January 2023, I have joined Mysten Labs as a Senior Research Scientist.
+I am a distributed computing researcher based in Boston, Massachusetts. From 2023 to 2026, I was a Senior Research Scientist at Mysten Labs, where I worked on blockchain, Byzantine consensus, and distributed/parallel transactions.
 
 Before Mysten Labs, I was a postdoctoral fellow in [Nir Shavit](https://people.csail.mit.edu/shanir/)'s group at [MIT CSAIL](https://www.csail.mit.edu/). My postdoctoral research was generously supported by a [SNSF Early Postdoc.Mobility](https://www.snf.ch/en/f6JZyI4uQ1mNeq3J/funding/funding/discontinued-funding-schemes/early-postdoc-mobility) fellowship. 
 
 Prior to joining MIT, I completed my PhD in the [Distributed Computing Laboratory](https://dcl.epfl.ch/site/) at EPFL. I was advised by [Rachid Guerraoui](http://lpdwww.epfl.ch/rachid/). My PhD work was supported in part by an [ERC grant](https://cordis.europa.eu/project/id/339539). My [dissertation](https://infoscience.epfl.ch/record/281678?ln=en) was awarded an Honorable Mention for the [EuroSys Needham PhD Award](https://www.eurosys.org/awards/roger-needham-phd-award), as well as an [EPFL Thesis Distinction](https://www.epfl.ch/education/phd/phd-awards/thesis-distinction/).
 
-My current research focuses on the theory and practice of distributed computing, in both shared memory and message passing, with a focus on blockchain. My research has explored the impact of emerging technologies, such as RDMA and persistent memory, on the way that we build distributed systems.
+My research focuses on the theory and practice of distributed computing, in both shared memory and message passing, with a focus on blockchain. My research has explored the impact of emerging technologies, such as RDMA and persistent memory, on the way that we build distributed systems.
 
 ## Conference Papers
 
-Author names appear in alphabetical order.
+Author names usually appear in alphabetical order.
 
-1. **Pilotfish: Distributed Execution for Elastic Blockchains**<br/>
-Quentin Kniep, Lefteris Kokoris-Kogias, Alberto Sonnino, Igor Zablotchi, Nuda Zhang<br/>
-FC 2025 (to appear)<br/>
-[[arXiv]](https://arxiv.org/abs/2401.16292)<br/>
+1. **Finding Nemo-Nemo: CFT DAG-based Consensus in the WAN**<br/>
+Rithwik Kerur, Pasindu Tennage, Philipp Jovanovic, Dahlia Malkhi, Alberto Sonnino, Igor Zablotchi.<br/>
+Middleware 2026 (to appear)<br/>
+[[arXiv]](https://arxiv.org/abs/2604.08914)
+1. **Tidehunter: Large-Value Storage With Minimal Data Relocation**<br/>
+Andrey Chursin, Lefteris Kokoris-Kogias, Alex Orlov, Alberto Sonnino, Igor Zablotchi.<br/>
+VLDB 2026<br/>
+[[Paper]](https://www.vldb.org/pvldb/vol19/p3786-zablotchi.pdf)
+1. **Remora: Scale-out Deterministic Execution for Smart Contracts**<br/>
+Zhengqing Liu, Alberto Sonnino, Igor Zablotchi, Eleftherios Kokoris Kogias, Marios Kogias.<br/>
+VLDB 2026<br/>
+[[Paper]](https://www.vldb.org/pvldb/vol19/p3076-liu.pdf)
+1. **Byzantine Consensus in the Random Asynchronous Model**<br/>
+George Danezis, Jovan Komatovic, Lefteris Kokoris-Kogias, Alberto Sonnino, Igor Zablotchi.<br/>
+DISC 2025<br/>
+[[Conference Version]](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.DISC.2025.28)
+1. **Mahi-Mahi: Low-Latency Asynchronous BFT DAG-Based Consensus**<br/>
+Philipp Jovanovic, Lefteris Kokoris-Kogias, Bryan Kumara, Alberto Sonnino, Pasindu Tennage, Igor Zablotchi.<br/>
+ICDCS 2025<br/>
+[[arXiv]](https://arxiv.org/abs/2410.08670)
+1. **Pilotfish: Distributed Execution for Scalable Blockchains**<br/>
+Quentin Kniep, Lefteris Kokoris-Kogias, Alberto Sonnino, Igor Zablotchi, Nuda Zhang.<br/>
+FC 2025<br/>
+[[Conference Version]](https://doi.org/10.1007/978-3-032-07024-1_17)
+[[arXiv]](https://arxiv.org/abs/2401.16292)
 1. **Partial Synchrony for Free: New Upper Bounds for Byzantine Agreement**<br/>
 Pierre Civit, Muhammad Ayaz Dzulfikar, Seth Gilbert, Rachid Guerraoui, Jovan Komatovic, Manuel Vidigueira, Igor Zablotchi<br/>
 SODA 2025<br/>
@@ -31,7 +52,7 @@ SODA 2025<br/>
 [[arXiv]](https://arxiv.org/abs/2402.10059)
 1. **DSig: Breaking the Barrier of Signatures in Data Centers**<br/>
 Marcos K. Aguilera, Clément Burgelin, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
-OSDI 2024<br/>
+OSDI 2024. **Distinguished Artifact Award!**<br/>
 [[Conference Version]](https://www.usenix.org/conference/osdi24/presentation/aguilera)
 [[arXiv]](https://arxiv.org/abs/2406.07215)
 1. **SWARM: Replicating Shared Disaggregated-Memory Data in No Time**<br/>
@@ -42,9 +63,11 @@ SOSP 2024<br/>
 1. **Efficient Signature-Free Validated Agreement**<br/>
 Pierre Civit, Muhammad Ayaz Dzulfikar, Seth Gilbert, Rachid Guerraoui, Jovan Komatovic, Manuel Vidigueira, Igor Zablotchi.<br/>
 DISC 2024<br/>
+[[Conference Version]](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.DISC.2024.14)
 1. **Parallel k-Core Decomposition with Batched Updates and Asynchronous Reads**<br/>
 Quanquan C. Liu, Julian Shun, Igor Zablotchi.<br/>
 PPoPP 2024<br/>
+[[Conference Version]](https://dl.acm.org/doi/10.1145/3627535.3638508)
 [[Full Version]](https://arxiv.org/pdf/2401.08015.pdf)
 1. **uBFT: Microsecond-scale BFT using Disaggregated Memory**<br/>
 Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi.<br/>
@@ -104,8 +127,8 @@ SPAA 2016
 
 ## Journal Articles
 
-1. **Honeycomb: ordered key-value store acceleration on an FPGA-based SmartNIC**<br/>
-Junyi Liu, Aleksandar Dragojevic, Shane Flemming, Antonios Katsarakis, Dario Korolija, Igor Zablotchi, Ho-cheung Ng, Anuj Kalia, Miguel Castro.<br/>
+1. **Honeycomb: Ordered Key-Value Store Acceleration on an FPGA-Based SmartNIC**<br/>
+Junyi Liu, Aleksandar Dragojevic, Shane T. Fleming, Antonios Katsarakis, Dario Korolija, Igor Zablotchi, Ho-cheung Ng, Anuj Kalia, Miguel Castro.<br/>
 IEEE Transactions on Computers, 2024.<br/>
 [[Paper]](https://ieeexplore.ieee.org/document/10367763)
 1. **Leaderless Consensus**<br/>

@@ -10,10 +10,10 @@ locale                   : "en-US"
 title                    : "Igor Zablotchi"
 title_separator          : "-"
 name                     : &name "Igor Zablotchi"
-description              : &description "Research Scientist @ Mysten Labs"
+description              : &description "Distributed Computing Researcher"
 url                      : https://zablotchi.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "zablotchi.github.io"
+repository               : "zablotchi/zablotchi.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -50,7 +50,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : "vLDVj2vTwrjV8lBm9BsDNxe54Thsz65q5N1ZUbs0B4o"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Igor Zablotchi"
   avatar           : "igor_photo.jpeg"
-  bio              : "Research Scientist @ Mysten Labs"
-  location         : "Zürich, Switzerland"
+  bio              : "Distributed Computing Researcher"
+  location         : "Boston, Massachusetts"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=D6k7TYoAAAAJ"
-  email            : "igor@mystenlabs.com"
+  email            : "igor.zablotchi@gmail.com"
   researchgate     :  
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/zablo/"
+  linkedin         : "zablo"
   orcid            : 
   pinterest        :
   soundcloud       :
