@@ -50,7 +50,9 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification : "vLDVj2vTwrjV8lBm9BsDNxe54Thsz65q5N1ZUbs0B4o"
+google_site_verification : # one token per Search Console property
+  - "vLDVj2vTwrjV8lBm9BsDNxe54Thsz65q5N1ZUbs0B4o" # https://zablotchi.github.io/ (keep until Change of Address is done)
+  - "x1WwwW17FpR_-zxYVkAheMcraC_I7P6bwJ1n-ycHs4E" # https://zablotchi.com/
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
