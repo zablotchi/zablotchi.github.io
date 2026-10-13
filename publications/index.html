@@ -1,0 +1,59 @@
+---
+title: Publications
+description: Papers, talks and posters by Igor Zablotchi.
+page_class: page--narrow
+---
+{%- assign conference = site.data.papers | where: "kind", "conference" -%}
+{%- assign journal = site.data.papers | where: "kind", "journal" -%}
+<main>
+<h1 class="page-title">Publications</h1>
+<p class="note">Author names usually appear in alphabetical order. Also on <a href="https://scholar.google.com/citations?user=D6k7TYoAAAAJ">Google Scholar</a>.</p>
+
+<section>
+<h2 class="section-head"><span class="no">01</span>Conference Papers</h2>
+<ul class="archive">
+{%- for paper in conference %}
+{% include paper.html paper=paper %}
+{%- endfor %}
+</ul>
+</section>
+
+<section>
+<h2 class="section-head"><span class="no">02</span>Journal Articles</h2>
+<ul class="archive">
+{%- for paper in journal %}
+{% include paper.html paper=paper %}
+{%- endfor %}
+</ul>
+</section>
+
+<section>
+<h2 class="section-head"><span class="no">03</span>Talks</h2>
+<ul class="archive">
+{%- for talk in site.data.talks.talks %}
+<li>
+<span class="year">{{ talk.year }}</span>
+<div>
+<strong class="entry-title">{{ talk.title }}</strong>
+<p class="blurb">{{ talk.where }}</p>
+</div>
+</li>
+{%- endfor %}
+</ul>
+</section>
+
+<section>
+<h2 class="section-head"><span class="no">04</span>Posters</h2>
+<ul class="archive">
+{%- for poster in site.data.talks.posters %}
+<li>
+<span class="year">{{ poster.year }}</span>
+<div>
+<a class="entry-title" href="{{ poster.url | relative_url }}">{{ poster.title }}</a>
+<p class="blurb">{{ poster.where }}</p>
+</div>
+</li>
+{%- endfor %}
+</ul>
+</section>
+</main>

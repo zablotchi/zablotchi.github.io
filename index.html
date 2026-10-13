@@ -1,0 +1,82 @@
+---
+redirect_from:
+  - /about/
+  - /about.html
+---
+{%- assign selected = site.data.papers | where: "selected", true -%}
+<div class="layout">
+
+<main>
+<section class="bio">
+<p>I'm a computer scientist working on distributed computing: consensus protocols, blockchains, and fast data-center systems. From 2023 to 2026 I was a Senior Research Scientist at <a href="https://www.mystenlabs.com">Mysten Labs</a>, the company behind the Sui blockchain. Before that, I was a postdoc in Nir Shavit's group at <a href="https://www.csail.mit.edu/">MIT CSAIL</a>, and I did my PhD at <a href="https://dcl.epfl.ch/site/">EPFL</a> with Rachid Guerraoui; my dissertation received an Honorable Mention for the EuroSys Roger Needham PhD Award.</p>
+</section>
+
+<section>
+<h2 class="section-head"><span class="no">01</span>Selected Papers</h2>
+<ul class="archive">
+{%- for paper in selected %}
+<li>
+<span class="year">{{ paper.year }}</span>
+<div>
+<a class="entry-title" href="{{ paper.url }}">{{ paper.title }}</a>{% if paper.tag %}<span class="tag">{{ paper.tag }}</span>{% endif %}
+<p class="blurb">{{ paper.venue }} {{ paper.year }} · with {% include coauthors.html authors=paper.authors %}</p>
+</div>
+</li>
+{%- endfor %}
+</ul>
+<p class="more"><a href="{{ '/publications/' | relative_url }}">All {{ site.data.papers.size }} papers, talks and posters →</a></p>
+</section>
+
+<section>
+<h2 class="section-head"><span class="no">02</span>Recognition</h2>
+<ul class="archive">
+{%- for award in site.data.awards %}
+<li>
+<span class="year">{{ award.year }}</span>
+<div>
+<strong class="entry-title">{{ award.title }}</strong>
+<p class="blurb">{{ award.detail }}</p>
+</div>
+</li>
+{%- endfor %}
+</ul>
+</section>
+
+<section>
+<h2 class="section-head"><span class="no">03</span>Experience</h2>
+<ul class="archive">
+{%- for job in site.data.experience %}
+<li>
+<span class="year">{{ job.year }}</span>
+<div>
+<strong class="entry-title">{{ job.title }}</strong>
+<p class="blurb">{{ job.detail }}</p>
+</div>
+</li>
+{%- endfor %}
+</ul>
+</section>
+</main>
+
+<aside>
+<img class="portrait" src="{{ '/images/igor-640.jpg' | relative_url }}" width="640" height="819" alt="Igor Zablotchi">
+
+<div class="side-section">
+<h2 class="section-head">Contact</h2>
+<p class="label">Email</p>
+<p class="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+<ul class="link-row">
+<li><a href="{{ site.cv | relative_url }}">CV</a></li>
+{%- for profile in site.profiles %}
+<li><a href="{{ profile.url }}">{{ profile.label }}</a></li>
+{%- endfor %}
+</ul>
+</div>
+
+<div class="side-section">
+<h2 class="section-head">Interests</h2>
+<p class="interests">{{ site.interests }}</p>
+</div>
+</aside>
+
+</div>

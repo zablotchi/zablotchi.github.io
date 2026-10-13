@@ -1,0 +1,6 @@
+{%- comment -%} Comma-separated authors of include.authors, minus the site owner. {%- endcomment -%}
+{%- assign coauthors = "" | split: "" -%}
+{%- for author in include.authors -%}
+{%- if author != site.title -%}{%- assign coauthors = coauthors | push: author -%}{%- endif -%}
+{%- endfor -%}
+{{- coauthors | join: ", " -}}

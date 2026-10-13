@@ -1,0 +1,27 @@
+# Shown on /publications/, newest first.
+talks:
+  - year: 2020
+    title: Microsecond Consensus for Microsecond Applications
+    where: Two Sigma, December 2020 · OSDI 2020
+  - year: 2020
+    title: Efficient Multi-word Compare and Swap
+    where: DISC 2020
+  - year: 2019
+    title: "RDMA & Distributed Systems: A Principled Approach"
+    where: IBM Research Zurich, January 2019
+  - year: 2018
+    title: The Inherent Cost of Remembering Consistently
+    where: SPAA 2018
+  - year: 2016
+    title: Fast and Robust Memory Reclamation for Concurrent Data Structures
+    where: SPAA 2016
+
+posters:
+  - year: 2018
+    title: Log-Free Concurrent Data Structures
+    where: USENIX ATC 2018
+    url: /pubs/atc-poster.pdf
+  - year: 2017
+    title: "FloDB: Unlocking Memory in Persistent Key-Value Stores"
+    where: EuroSys 2017
+    url: /pubs/eurosys-poster.pdf

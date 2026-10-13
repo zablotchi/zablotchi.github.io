@@ -1,0 +1,5 @@
+{%- comment -%} All of include.authors, in order, with the site owner highlighted. {%- endcomment -%}
+{%- for author in include.authors -%}
+{%- if author == site.title -%}<span class="me">{{ author }}</span>{%- else -%}{{ author }}{%- endif -%}
+{%- unless forloop.last %}, {% endunless -%}
+{%- endfor -%}

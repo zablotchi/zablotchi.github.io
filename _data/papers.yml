@@ -1,0 +1,257 @@
+# All papers, newest first. Shown on /publications/; entries with
+# `selected: true` also appear on the home page.
+#
+#   kind:     conference | journal
+#   venue:    short venue name, shown with the year
+#   tag:      optional short label (award, "To appear"), shown in the accent color
+#   url:      where the title links to
+#   links:    extra links, shown on /publications/
+#   authors:  in the order they appear on the paper
+
+- title: "Finding Nemo-Nemo: CFT DAG-based Consensus in the WAN"
+  kind: conference
+  venue: Middleware
+  year: 2026
+  tag: To appear
+  selected: true
+  url: https://arxiv.org/abs/2604.08914
+  links:
+    - { label: arXiv, url: "https://arxiv.org/abs/2604.08914" }
+  authors: [Rithwik Kerur, Pasindu Tennage, Philipp Jovanovic, Dahlia Malkhi, Alberto Sonnino, Igor Zablotchi]
+
+- title: "Tidehunter: Large-Value Storage With Minimal Data Relocation"
+  kind: conference
+  venue: VLDB
+  year: 2026
+  selected: true
+  url: https://www.vldb.org/pvldb/vol19/p3786-zablotchi.pdf
+  links:
+    - { label: Paper, url: "https://www.vldb.org/pvldb/vol19/p3786-zablotchi.pdf" }
+  authors: [Andrey Chursin, Lefteris Kokoris-Kogias, Alex Orlov, Alberto Sonnino, Igor Zablotchi]
+
+- title: "Remora: Scale-out Deterministic Execution for Smart Contracts"
+  kind: conference
+  venue: VLDB
+  year: 2026
+  selected: true
+  url: https://www.vldb.org/pvldb/vol19/p3076-liu.pdf
+  links:
+    - { label: Paper, url: "https://www.vldb.org/pvldb/vol19/p3076-liu.pdf" }
+  authors: [Zhengqing Liu, Alberto Sonnino, Igor Zablotchi, Eleftherios Kokoris Kogias, Marios Kogias]
+
+- title: "Byzantine Consensus in the Random Asynchronous Model"
+  kind: conference
+  venue: DISC
+  year: 2025
+  url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.DISC.2025.28
+  links:
+    - { label: Paper, url: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.DISC.2025.28" }
+  authors: [George Danezis, Jovan Komatovic, Lefteris Kokoris-Kogias, Alberto Sonnino, Igor Zablotchi]
+
+- title: "Mahi-Mahi: Low-Latency Asynchronous BFT DAG-Based Consensus"
+  kind: conference
+  venue: ICDCS
+  year: 2025
+  selected: true
+  url: https://arxiv.org/abs/2410.08670
+  links:
+    - { label: arXiv, url: "https://arxiv.org/abs/2410.08670" }
+  authors: [Philipp Jovanovic, Lefteris Kokoris-Kogias, Bryan Kumara, Alberto Sonnino, Pasindu Tennage, Igor Zablotchi]
+
+- title: "Pilotfish: Distributed Execution for Scalable Blockchains"
+  kind: conference
+  venue: FC
+  year: 2025
+  url: https://doi.org/10.1007/978-3-032-07024-1_17
+  links:
+    - { label: Paper, url: "https://doi.org/10.1007/978-3-032-07024-1_17" }
+    - { label: arXiv, url: "https://arxiv.org/abs/2401.16292" }
+  authors: [Quentin Kniep, Lefteris Kokoris-Kogias, Alberto Sonnino, Igor Zablotchi, Nuda Zhang]
+
+- title: "Partial Synchrony for Free: New Upper Bounds for Byzantine Agreement"
+  kind: conference
+  venue: SODA
+  year: 2025
+  selected: true
+  url: https://epubs.siam.org/doi/10.1137/1.9781611978322.144
+  links:
+    - { label: Paper, url: "https://epubs.siam.org/doi/10.1137/1.9781611978322.144" }
+    - { label: arXiv, url: "https://arxiv.org/abs/2402.10059" }
+  authors: [Pierre Civit, Muhammad Ayaz Dzulfikar, Seth Gilbert, Rachid Guerraoui, Jovan Komatovic, Manuel Vidigueira, Igor Zablotchi]
+
+- title: "Efficient Signature-Free Validated Agreement"
+  kind: conference
+  venue: DISC
+  year: 2024
+  url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.DISC.2024.14
+  links:
+    - { label: Paper, url: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.DISC.2024.14" }
+  authors: [Pierre Civit, Muhammad Ayaz Dzulfikar, Seth Gilbert, Rachid Guerraoui, Jovan Komatovic, Manuel Vidigueira, Igor Zablotchi]
+
+- title: "SWARM: Replicating Shared Disaggregated-Memory Data in No Time"
+  kind: conference
+  venue: SOSP
+  year: 2024
+  url: https://dl.acm.org/doi/10.1145/3694715.3695945
+  links:
+    - { label: Paper, url: "https://dl.acm.org/doi/10.1145/3694715.3695945" }
+    - { label: arXiv, url: "https://arxiv.org/abs/2409.16258" }
+  authors: [Antoine Murat, Clément Burgelin, Athanasios Xygkis, Igor Zablotchi, Marcos K. Aguilera, Rachid Guerraoui]
+
+- title: "DSig: Breaking the Barrier of Signatures in Data Centers"
+  kind: conference
+  venue: OSDI
+  year: 2024
+  tag: Artifact award
+  selected: true
+  url: https://www.usenix.org/conference/osdi24/presentation/aguilera
+  links:
+    - { label: Paper, url: "https://www.usenix.org/conference/osdi24/presentation/aguilera" }
+    - { label: arXiv, url: "https://arxiv.org/abs/2406.07215" }
+  authors: [Marcos K. Aguilera, Clément Burgelin, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi]
+
+- title: "Parallel k-Core Decomposition with Batched Updates and Asynchronous Reads"
+  kind: conference
+  venue: PPoPP
+  year: 2024
+  url: https://dl.acm.org/doi/10.1145/3627535.3638508
+  links:
+    - { label: Paper, url: "https://dl.acm.org/doi/10.1145/3627535.3638508" }
+    - { label: Full version, url: "https://arxiv.org/pdf/2401.08015.pdf" }
+  authors: [Quanquan C. Liu, Julian Shun, Igor Zablotchi]
+
+- title: "uBFT: Microsecond-scale BFT using Disaggregated Memory"
+  kind: conference
+  venue: ASPLOS
+  year: 2023
+  url: https://dl.acm.org/doi/10.1145/3575693.3575732
+  links:
+    - { label: Paper, url: "https://dl.acm.org/doi/10.1145/3575693.3575732" }
+    - { label: arXiv, url: "https://arxiv.org/pdf/2210.17174.pdf" }
+  authors: [Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Antoine Murat, Athanasios Xygkis, Igor Zablotchi]
+
+- title: "Frugal Byzantine Computing"
+  kind: conference
+  venue: DISC
+  year: 2021
+  url: https://drops.dagstuhl.de/opus/volltexte/2021/14805/pdf/LIPIcs-DISC-2021-3.pdf
+  links:
+    - { label: Paper, url: "https://drops.dagstuhl.de/opus/volltexte/2021/14805/pdf/LIPIcs-DISC-2021-3.pdf" }
+    - { label: arXiv, url: "https://arxiv.org/abs/2108.01330" }
+    - { label: Talk, url: "https://www.youtube.com/watch?v=663fVh5rSVE" }
+  authors: [Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Dalia Papuc, Athanasios Xygkis, Igor Zablotchi]
+
+- title: "Leaderless Consensus"
+  kind: conference
+  venue: ICDCS
+  year: 2021
+  tag: Best paper
+  selected: true
+  url: https://infoscience.epfl.ch/record/282657
+  links:
+    - { label: Paper, url: "https://infoscience.epfl.ch/record/282657" }
+    - { label: Talk, url: "https://www.youtube.com/watch?v=gPrdhebjTM0" }
+  authors: [Karolos Antoniadis, Antoine Desjardins, Vincent Gramoli, Rachid Guerraoui, Igor Zablotchi]
+
+- title: "Microsecond Consensus for Microsecond Applications"
+  kind: conference
+  venue: OSDI
+  year: 2020
+  selected: true
+  url: https://www.usenix.org/conference/osdi20/presentation/aguilera
+  links:
+    - { label: Paper, url: "https://www.usenix.org/system/files/osdi20-aguilera.pdf" }
+    - { label: Full version, url: "https://arxiv.org/abs/2010.06288" }
+    - { label: Slides, url: "https://www.usenix.org/sites/default/files/conference/protected-files/osdi20_slides_aguilera.pdf" }
+    - { label: Talk, url: "https://www.youtube.com/watch?v=q7ziqsCmjHQ" }
+    - { label: Code, url: "https://github.com/LPD-EPFL/mu" }
+  authors: [Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra J. Marathe, Athanasios Xygkis, Igor Zablotchi]
+
+- title: "Efficient Multi-word Compare and Swap"
+  kind: conference
+  venue: DISC
+  year: 2020
+  url: https://drops.dagstuhl.de/opus/volltexte/2020/13082/pdf/LIPIcs-DISC-2020-4.pdf
+  links:
+    - { label: Paper, url: "https://drops.dagstuhl.de/opus/volltexte/2020/13082/pdf/LIPIcs-DISC-2020-4.pdf" }
+    - { label: Full version, url: "https://arxiv.org/abs/2008.02527" }
+    - { label: Talk, url: "https://www.youtube.com/watch?v=905yWpHB5ns" }
+  authors: [Rachid Guerraoui, Alex Kogan, Virendra J. Marathe, Igor Zablotchi]
+
+- title: "The Impact of RDMA on Agreement"
+  kind: conference
+  venue: PODC
+  year: 2019
+  url: https://infoscience.epfl.ch/record/275877
+  links:
+    - { label: Paper, url: "https://infoscience.epfl.ch/record/275877" }
+    - { label: Full version, url: "https://arxiv.org/abs/1905.12143" }
+  authors: [Marcos K. Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra J. Marathe, Igor Zablotchi]
+
+- title: "Log-Free Concurrent Data Structures"
+  kind: conference
+  venue: USENIX ATC
+  year: 2018
+  url: https://www.usenix.org/system/files/conference/atc18/atc18-david.pdf
+  links:
+    - { label: Paper, url: "https://www.usenix.org/system/files/conference/atc18/atc18-david.pdf" }
+    - { label: Poster, url: "/pubs/atc-poster.pdf" }
+  authors: [Tudor David, Aleksandar Dragojević, Rachid Guerraoui, Igor Zablotchi]
+
+- title: "The Inherent Cost of Remembering Consistently"
+  kind: conference
+  venue: SPAA
+  year: 2018
+  url: https://infoscience.epfl.ch/record/255526
+  links:
+    - { label: Paper, url: "https://infoscience.epfl.ch/record/255526" }
+  authors: [Nachshon Cohen, Rachid Guerraoui, Igor Zablotchi]
+
+- title: "FloDB: Unlocking Memory in Persistent Key-Value Stores"
+  kind: conference
+  venue: EuroSys
+  year: 2017
+  url: https://infoscience.epfl.ch/record/256000
+  links:
+    - { label: Paper, url: "https://infoscience.epfl.ch/record/256000" }
+    - { label: Poster, url: "/pubs/eurosys-poster.pdf" }
+  authors: [Oana Balmau, Rachid Guerraoui, Vasileios Trigonakis, Igor Zablotchi]
+
+- title: "The Disclosure Power of Shared Objects"
+  kind: conference
+  venue: NETYS
+  year: 2017
+  note: short paper
+  url: https://infoscience.epfl.ch/record/229313
+  links:
+    - { label: Paper, url: "https://infoscience.epfl.ch/record/229313" }
+    - { label: Full version, url: "https://infoscience.epfl.ch/record/226211" }
+  authors: [Peva Blanchard, Rachid Guerraoui, Julien Stainer, Igor Zablotchi]
+
+- title: "Fast and Robust Memory Reclamation for Concurrent Data Structures"
+  kind: conference
+  venue: SPAA
+  year: 2016
+  url: https://infoscience.epfl.ch/record/223694
+  links:
+    - { label: Paper, url: "https://infoscience.epfl.ch/record/223694" }
+    - { label: Full version, url: "https://infoscience.epfl.ch/record/218413" }
+  authors: [Oana Balmau, Rachid Guerraoui, Maurice Herlihy, Igor Zablotchi]
+
+- title: "Honeycomb: Ordered Key-Value Store Acceleration on an FPGA-Based SmartNIC"
+  kind: journal
+  venue: IEEE Transactions on Computers
+  year: 2024
+  url: https://ieeexplore.ieee.org/document/10367763
+  links:
+    - { label: Paper, url: "https://ieeexplore.ieee.org/document/10367763" }
+  authors: [Junyi Liu, Aleksandar Dragojević, Shane T. Fleming, Antonios Katsarakis, Dario Korolija, Igor Zablotchi, Ho-Cheung Ng, Anuj Kalia, Miguel Castro]
+
+- title: "Leaderless Consensus"
+  kind: journal
+  venue: Journal of Parallel and Distributed Computing
+  year: 2023
+  url: https://doi.org/10.1016/j.jpdc.2023.01.009
+  links:
+    - { label: Paper, url: "https://doi.org/10.1016/j.jpdc.2023.01.009" }
+  authors: [Karolos Antoniadis, Julien Benhaim, Antoine Desjardins, Poroma Elias, Vincent Gramoli, Rachid Guerraoui, Gauthier Voron, Igor Zablotchi]

@@ -1,21 +1,40 @@
-{% include base_path %}
-
 <meta charset="utf-8">
-
-{% include seo.html %}
-
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- assign description = page.description | default: site.description | strip_newlines | strip %}
+{%- assign portrait = "/images/igor-640.jpg" | absolute_url %}
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ description | escape }}">
+<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
+<meta property="og:description" content="{{ description | escape }}">
+<meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+<meta property="og:image" content="{{ portrait }}">
+<meta name="twitter:card" content="summary">
+{%- for token in site.google_site_verification %}
+<meta name="google-site-verification" content="{{ token }}">
+{%- endfor %}
+<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&amp;display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+{%- if page.url == "/" %}
+{%- assign same_as = site.profiles | map: "url" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | append: "/" | jsonify }},
+  "image": {{ portrait | jsonify }},
+  "jobTitle": {{ site.tagline | jsonify }},
+  "email": {{ site.email | prepend: "mailto:" | jsonify }},
+  "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "EPFL" }],
+  "sameAs": {{ same_as | jsonify }}
+}
 </script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
-
-<meta http-equiv="cleartype" content="on">
+{%- endif %}

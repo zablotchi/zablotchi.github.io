@@ -1,0 +1,15 @@
+{%- assign paper = include.paper -%}
+<li>
+<span class="year">{{ paper.year }}</span>
+<div>
+<a class="entry-title" href="{{ paper.url }}">{{ paper.title }}</a>{% if paper.tag %}<span class="tag">{{ paper.tag }}</span>{% endif %}
+<p class="blurb">{{ paper.venue }} {{ paper.year }}{% if paper.note %} ({{ paper.note }}){% endif %} · {% include authors.html authors=paper.authors %}</p>
+{%- if paper.links %}
+<ul class="links">
+{%- for link in paper.links %}
+<li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+{%- endfor %}
+</ul>
+{%- endif %}
+</div>
+</li>
