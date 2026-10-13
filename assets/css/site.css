@@ -264,14 +264,11 @@ a.entry-title:hover { color: var(--accent); }
 }
 .site-footer a { color: var(--ink-muted); text-decoration: none; }
 .site-footer a:hover { color: var(--accent); }
-.site-footer .credit { margin-left: auto; color: var(--ink-muted); font-size: 11px; }
-.site-footer .credit a { text-decoration: underline; }
 
 @media (max-width: 520px) {
   .page { padding: 32px 16px 40px; }
   .archive > li { grid-template-columns: 44px minmax(0, 1fr); gap: 12px; }
   .more { margin-left: 56px; }
-  .site-footer .credit { margin-left: 0; }
 }
 
 @media print {
