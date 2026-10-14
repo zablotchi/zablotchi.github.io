@@ -15,6 +15,7 @@ this repository's name.
 | Bio | `index.html` |
 | Name, tagline, email, profile links, interests | `_config.yml` |
 | Styles | `assets/css/site.css` |
+| Retro mode (the footer's floppy-disk button) | the "Retro mode" section of `assets/css/site.css`, the script in `_includes/head.html`, `images/igor-wizard.jpg`; retro-only labels are the `t-retro` elements in `index.html` |
 | CV | replace `files/cv.pdf` |
 
 ## Previewing locally

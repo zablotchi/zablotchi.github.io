@@ -3,7 +3,7 @@
 <span class="year">{{ paper.year }}</span>
 <div>
 <a class="entry-title" href="{{ paper.url }}">{{ paper.title }}</a>{% if paper.tag %}<span class="tag">{{ paper.tag }}</span>{% endif %}
-<p class="blurb">{{ paper.venue }} {{ paper.year }}{% if paper.note %} ({{ paper.note }}){% endif %} · {% include authors.html authors=paper.authors %}</p>
+<p class="blurb"><span class="venue">{{ paper.venue }} {{ paper.year }}{% if paper.note %} ({{ paper.note }}){% endif %}</span><span class="sep"> · </span><span class="t-retro" hidden>Party: </span>{% include authors.html authors=paper.authors %}</p>
 {%- if paper.links %}
 <ul class="links">
 {%- for link in paper.links %}

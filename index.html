@@ -4,31 +4,35 @@ redirect_from:
   - /about.html
 ---
 {%- assign selected = site.data.papers | where: "selected", true -%}
+{%- comment -%}
+  Elements marked .t-retro (hidden by default) replace their .t-modern sibling in retro mode;
+  see the retro section of assets/css/site.css.
+{%- endcomment -%}
 <div class="layout">
 
 <main>
-<section class="bio">
+<section class="bio" data-speaker="{{ site.title | split: ' ' | first }}">
 <p>I'm a computer scientist working on distributed computing: consensus protocols, blockchains, and fast data-center systems. From 2023 to 2026 I was a Senior Research Scientist at <a href="https://www.mystenlabs.com">Mysten Labs</a>, the company behind the Sui blockchain. Before that, I was a postdoc in Nir Shavit's group at <a href="https://www.csail.mit.edu/">MIT CSAIL</a>, and I did my PhD at <a href="https://dcl.epfl.ch/site/">EPFL</a> with Rachid Guerraoui; my dissertation received an Honorable Mention for the EuroSys Roger Needham PhD Award.</p>
 </section>
 
-<section>
-<h2 class="section-head"><span class="no">01</span>Selected Papers</h2>
+<section class="papers">
+<h2 class="section-head"><span class="no">01</span><span class="t-modern">Selected Papers</span><span class="t-retro" hidden>Quest Log</span><span class="count t-retro" hidden>{{ selected.size }}/{{ site.data.papers.size }}</span></h2>
 <ul class="archive">
 {%- for paper in selected %}
 <li>
 <span class="year">{{ paper.year }}</span>
 <div>
 <a class="entry-title" href="{{ paper.url }}">{{ paper.title }}</a>{% if paper.tag %}<span class="tag">{{ paper.tag }}</span>{% endif %}
-<p class="blurb">{{ paper.venue }} {{ paper.year }} · with {% include coauthors.html authors=paper.authors %}</p>
+<p class="blurb"><span class="venue">{{ paper.venue }} {{ paper.year }}</span><span class="sep"> · </span><span class="t-modern">with</span><span class="t-retro" hidden>Party:</span> {% include coauthors.html authors=paper.authors %}</p>
 </div>
 </li>
 {%- endfor %}
 </ul>
-<p class="more"><a href="{{ '/publications/' | relative_url }}">All {{ site.data.papers.size }} papers, talks and posters →</a></p>
+<p class="more"><a href="{{ '/publications/' | relative_url }}">All {{ site.data.papers.size }} papers, talks and posters<span class="arrow"> →</span></a></p>
 </section>
 
-<section>
-<h2 class="section-head"><span class="no">02</span>Recognition</h2>
+<section class="awards">
+<h2 class="section-head"><span class="no">02</span><span class="t-modern">Recognition</span><span class="t-retro" hidden>Achievements</span></h2>
 <ul class="archive">
 {%- for award in site.data.awards %}
 <li>
@@ -42,8 +46,8 @@ redirect_from:
 </ul>
 </section>
 
-<section>
-<h2 class="section-head"><span class="no">03</span>Experience</h2>
+<section class="jobs">
+<h2 class="section-head"><span class="no">03</span><span class="t-modern">Experience</span><span class="t-retro" hidden>Save Files</span></h2>
 <ul class="archive">
 {%- for job in site.data.experience %}
 <li>
@@ -59,7 +63,16 @@ redirect_from:
 </main>
 
 <aside>
-<img class="portrait" src="{{ '/images/igor-640.jpg' | relative_url }}" width="640" height="819" alt="Igor Zablotchi">
+<div class="status">
+<h2 class="section-head t-retro" hidden>Status</h2>
+<img class="portrait portrait--photo" src="{{ '/images/igor-640.jpg' | relative_url }}" width="640" height="819" alt="Igor Zablotchi">
+<img class="portrait portrait--retro" src="{{ '/images/igor-wizard.jpg' | relative_url }}" width="765" height="1024" alt="Igor Zablotchi as a pixel-art wizard" loading="lazy">
+<dl class="stats t-retro" hidden>
+<dt>Class</dt><dd>Researcher</dd>
+<dt>Field</dt><dd>Distributed computing</dd>
+<dt>Base</dt><dd>{{ site.location }}</dd>
+</dl>
+</div>
 
 <div class="side-section">
 <h2 class="section-head">Contact</h2>
@@ -74,8 +87,14 @@ redirect_from:
 </div>
 
 <div class="side-section">
-<h2 class="section-head">Interests</h2>
-<p class="interests">{{ site.interests }}</p>
+<h2 class="section-head"><span class="t-modern">Interests</span><span class="t-retro" hidden>Skills</span></h2>
+<p class="interests t-modern">{{ site.interests }}</p>
+<ul class="skills t-retro" hidden>
+{%- assign skills = site.interests | remove: "." | split: ", " %}
+{%- for skill in skills %}
+<li>{{ skill | slice: 0 | upcase }}{{ skill | slice: 1, 200 }}</li>
+{%- endfor %}
+</ul>
 </div>
 </aside>
 

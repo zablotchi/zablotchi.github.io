@@ -22,6 +22,53 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&amp;display=swap">
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<script>
+// Retro mode (8-bit RPG theme): the footer's floppy-disk button sets data-theme="retro"
+// on <html> and remembers it. Runs here, before the body, so a returning visitor's page
+// paints in the right theme. The pixel fonts load only when retro mode is on.
+(function () {
+  var root = document.documentElement;
+  var FONTS = "https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap";
+
+  function setRetro(on) {
+    if (on) {
+      root.setAttribute("data-theme", "retro");
+      if (!document.getElementById("retro-fonts")) {
+        var link = document.createElement("link");
+        link.id = "retro-fonts";
+        link.rel = "stylesheet";
+        link.href = FONTS;
+        document.head.appendChild(link);
+      }
+    } else {
+      root.removeAttribute("data-theme");
+    }
+  }
+
+  try { setRetro(localStorage.getItem("theme") === "retro"); } catch (e) {}
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var button = document.querySelector(".retro-toggle");
+    if (!button) return;
+    function sync() {
+      var on = root.getAttribute("data-theme") === "retro";
+      button.setAttribute("aria-pressed", on ? "true" : "false");
+      button.title = on ? "Back to the present" : "Retro mode";
+    }
+    button.hidden = false;
+    sync();
+    button.addEventListener("click", function () {
+      var on = root.getAttribute("data-theme") !== "retro";
+      setRetro(on);
+      try {
+        if (on) localStorage.setItem("theme", "retro");
+        else localStorage.removeItem("theme");
+      } catch (e) {}
+      sync();
+    });
+  });
+})();
+</script>
 {%- if page.url == "/" %}
 {%- assign same_as = site.profiles | map: "url" %}
 <script type="application/ld+json">

@@ -265,6 +265,30 @@ a.entry-title:hover { color: var(--accent); }
 .site-footer a { color: var(--ink-muted); text-decoration: none; }
 .site-footer a:hover { color: var(--accent); }
 
+/* The retro-mode switch: a faded floppy disk at the end of the footer. */
+.retro-toggle {
+  margin: -14px -14px -14px auto;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 150ms ease-out;
+}
+.retro-toggle[hidden] { display: none; }
+.retro-toggle:hover,
+.retro-toggle:focus-visible { opacity: 1; }
+.retro-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: -6px; }
+.retro-toggle .icon-back { display: none; }
+
+.portrait--retro { display: none; }
+.t-retro[hidden] { display: none; }
+
 @media (max-width: 520px) {
   .page { padding: 32px 16px 40px; }
   .archive > li { grid-template-columns: 44px minmax(0, 1fr); gap: 12px; }
@@ -274,4 +298,395 @@ a.entry-title:hover { color: var(--accent); }
 @media print {
   body { background: #fff; }
   .site-footer { display: none; }
+}
+
+/* ==========================================================================
+   Retro mode: an 8-bit RPG skin, switched on by the footer's floppy disk.
+   head.html sets data-theme="retro" on <html> and loads the two pixel fonts.
+   Every block becomes a royal-blue window whose 4px frame is four offset
+   box-shadows, which leaves the corners notched like a pixel-art menu.
+   Screen only, so printing always uses the normal design.
+   ========================================================================== */
+
+@media screen {
+
+[data-theme="retro"] {
+  --r-ground: #0C0C16;
+  --r-window: #2338A8;
+  --r-frame: #F4F4F4;
+  --r-text: #F4F4F4;
+  --r-muted: #C8D0FF;
+  --r-gold: #F8D838;
+  --r-line: #8898F0;
+  --r-head: 'Press Start 2P', 'Courier New', monospace;
+  --r-body: 'DotGothic16', 'Courier New', monospace;
+  --r-cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 7' shape-rendering='crispEdges'%3E%3Cpath fill='%23F4F4F4' d='M0 0h1v1h-1zM0 1h2v1h-2zM0 2h3v1h-3zM0 3h4v1h-4zM0 4h3v1h-3zM0 5h2v1h-2zM0 6h1v1h-1z'/%3E%3C/svg%3E");
+  --r-more: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 4' shape-rendering='crispEdges'%3E%3Cpath fill='%23F4F4F4' d='M0 0h7v1h-7zM1 1h5v1h-5zM2 2h3v1h-3zM3 3h1v1h-1z'/%3E%3C/svg%3E");
+  --r-trophy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' shape-rendering='crispEdges'%3E%3Cpath fill='%23F8D838' d='M2 0h8v1h-8zM0 1h12v1h-12zM0 2h1v2h-1zM2 2h8v2h-8zM11 2h1v2h-1zM1 4h10v1h-10zM2 5h8v1h-8zM3 6h6v1h-6zM4 7h4v1h-4zM5 8h2v2h-2zM3 10h6v1h-6zM2 11h8v1h-8z'/%3E%3Cpath fill='%23FFFFFF' d='M3 2h1v2h-1z'/%3E%3C/svg%3E");
+}
+
+[data-theme="retro"] body {
+  background: var(--r-ground);
+  color: var(--r-text);
+  font-family: var(--r-body);
+  font-size: 19px;
+  line-height: 1.7;
+}
+[data-theme="retro"] ::selection { background: var(--r-gold); color: var(--r-ground); }
+
+[data-theme="retro"] a {
+  color: var(--r-text);
+  text-decoration-color: var(--r-line);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+[data-theme="retro"] a:hover { color: var(--r-gold); text-decoration-color: var(--r-gold); }
+[data-theme="retro"] a:focus-visible,
+[data-theme="retro"] button:focus-visible { outline: 2px solid var(--r-gold); outline-offset: 2px; border-radius: 0; }
+
+/* Swap labels: .t-retro elements carry `hidden`, so each needs an explicit display. */
+[data-theme="retro"] .t-modern { display: none; }
+[data-theme="retro"] .t-retro { display: inline; }
+
+/* ---------- Windows ---------- */
+
+[data-theme="retro"] .masthead,
+[data-theme="retro"] main > section,
+[data-theme="retro"] .status,
+[data-theme="retro"] .side-section,
+[data-theme="retro"] .site-footer {
+  margin: 4px 4px 32px;
+  padding: 24px 28px 26px;
+  background: var(--r-window);
+  border: 0;
+  box-shadow: 0 -4px 0 var(--r-frame), 0 4px 0 var(--r-frame), -4px 0 0 var(--r-frame), 4px 0 0 var(--r-frame);
+}
+[data-theme="retro"] main > section:last-child,
+[data-theme="retro"] aside > :last-child { margin-bottom: 4px; }
+
+[data-theme="retro"] .layout { grid-template-columns: minmax(0, 1fr) 336px; gap: 28px; }
+
+[data-theme="retro"] .section-head {
+  gap: 16px;
+  margin: 0 0 20px;
+  font-family: var(--r-head);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--r-gold);
+}
+[data-theme="retro"] .section-head.t-retro { display: flex; }
+[data-theme="retro"] .section-head::after,
+[data-theme="retro"] .section-head .no { display: none; }
+[data-theme="retro"] .section-head .count { margin-left: auto; color: var(--r-muted); }
+[data-theme="retro"] .side-section .section-head { margin-bottom: 16px; }
+
+/* ---------- Masthead: the title screen ---------- */
+
+[data-theme="retro"] .masthead { padding: 22px 28px 26px; }
+[data-theme="retro"] .masthead-meta {
+  padding: 0 0 18px;
+  border: 0;
+  font-family: var(--r-head);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.8;
+  color: var(--r-muted);
+}
+[data-theme="retro"] .masthead-title { padding: 0; border: 0; }
+[data-theme="retro"] .site-name {
+  font-family: var(--r-head);
+  font-size: clamp(20px, 4.4vw, 32px);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 0 #000;
+}
+[data-theme="retro"] .affiliation { margin-top: 12px; font-style: normal; font-size: 20px; color: var(--r-muted); }
+[data-theme="retro"] .affiliation .sep { color: var(--r-muted); }
+
+[data-theme="retro"] .page-title {
+  margin: 0 0 14px;
+  font-family: var(--r-head);
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 0 #000;
+}
+[data-theme="retro"] .note { margin: 0 0 32px; font-style: normal; font-size: 17px; color: var(--r-muted); }
+
+/* ---------- Bio: a dialog box with a speaker tag and a blinking "more" arrow ---------- */
+
+[data-theme="retro"] .bio { position: relative; margin-top: 18px; padding: 30px 30px 38px; }
+[data-theme="retro"] .bio::before {
+  content: attr(data-speaker);
+  position: absolute;
+  left: 18px;
+  top: -18px;
+  padding: 7px 10px 6px;
+  background: var(--r-frame);
+  color: var(--r-ground);
+  font-family: var(--r-head);
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+[data-theme="retro"] .bio::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: 16px;
+  width: 14px;
+  height: 8px;
+  background: var(--r-more) center / 100% 100% no-repeat;
+}
+[data-theme="retro"] .bio p { font-size: 20px; line-height: 1.75; }
+
+@keyframes retro-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  [data-theme="retro"] .bio::after { animation: retro-blink 1s steps(1) infinite; }
+}
+
+/* ---------- Lists ---------- */
+
+[data-theme="retro"] .archive { display: flex; flex-direction: column; gap: 20px; }
+[data-theme="retro"] .archive > li {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "year" "body";
+  gap: 0;
+  padding: 0;
+  border: 0;
+}
+[data-theme="retro"] .archive > li > div { grid-area: body; min-width: 0; }
+[data-theme="retro"] .year {
+  grid-area: year;
+  padding: 0 0 4px;
+  font-family: var(--r-head);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--r-gold);
+}
+[data-theme="retro"] .entry-title {
+  font-family: var(--r-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+[data-theme="retro"] a.entry-title:hover { color: var(--r-gold); }
+[data-theme="retro"] .blurb { margin-top: 6px; font-size: 17px; line-height: 1.6; color: var(--r-muted); }
+[data-theme="retro"] .blurb .me { color: #FFFFFF; font-weight: 400; }
+[data-theme="retro"] .blurb .sep { display: none; }
+[data-theme="retro"] .venue {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--r-head);
+  font-size: 10px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--r-gold);
+}
+[data-theme="retro"] .tag {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 4px 7px 3px;
+  background: var(--r-gold);
+  color: var(--r-ground);
+  font-family: var(--r-head);
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.2;
+  vertical-align: 3px;
+}
+[data-theme="retro"] .links {
+  margin-top: 8px;
+  gap: 4px 18px;
+  font-family: var(--r-head);
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: 1.8;
+}
+[data-theme="retro"] .links a { color: var(--r-text); }
+[data-theme="retro"] .links a:hover { color: var(--r-gold); }
+[data-theme="retro"] .more { margin: 26px 0 0 32px; }
+[data-theme="retro"] .more a {
+  font-family: var(--r-head);
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: var(--r-line);
+  color: var(--r-text);
+}
+/* The pixel font has no arrow glyph: draw the menu cursor instead. */
+[data-theme="retro"] .more .arrow { display: none; }
+[data-theme="retro"] .more a::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
+  background: var(--r-cursor) center / 100% 100% no-repeat;
+}
+
+/* Papers: a menu whose cursor follows the pointer (first entry when idle). */
+[data-theme="retro"] .papers .archive > li {
+  grid-template-columns: 22px minmax(0, 1fr);
+  grid-template-areas: "mark body";
+  column-gap: 10px;
+}
+[data-theme="retro"] .papers .year { display: none; }
+[data-theme="retro"] .papers .archive > li::before {
+  content: "";
+  grid-area: mark;
+  width: 8px;
+  height: 14px;
+  margin-top: 9px;
+  background: var(--r-cursor) center / 100% 100% no-repeat;
+  opacity: 0;
+}
+[data-theme="retro"] .papers .archive > li:hover::before,
+[data-theme="retro"] .papers .archive > li:focus-within::before,
+[data-theme="retro"] .papers .archive:not(:hover):not(:focus-within) > li:first-child::before { opacity: 1; }
+
+/* Recognition: trophies. */
+[data-theme="retro"] .awards .archive > li {
+  grid-template-columns: 24px minmax(0, 1fr);
+  grid-template-areas: "mark year" "mark body";
+  column-gap: 16px;
+}
+[data-theme="retro"] .awards .archive > li::before {
+  content: "";
+  grid-area: mark;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+  background: var(--r-trophy) center / 100% 100% no-repeat;
+}
+
+/* Experience: save slots. */
+[data-theme="retro"] .jobs .archive { counter-reset: save; gap: 14px; }
+[data-theme="retro"] .jobs .archive > li {
+  counter-increment: save;
+  grid-template-columns: 96px minmax(0, 1fr);
+  grid-template-areas: "mark body";
+  gap: 8px 16px;
+  padding: 14px 18px 16px;
+  border: 2px solid var(--r-line);
+}
+[data-theme="retro"] .jobs .archive > li::before {
+  content: "File " counter(save);
+  grid-area: mark;
+  font-family: var(--r-head);
+  font-size: 10px;
+  line-height: 2.4;
+  text-transform: uppercase;
+  color: var(--r-gold);
+}
+[data-theme="retro"] .jobs .year { display: none; }
+
+@media (max-width: 800px) {
+  [data-theme="retro"] .layout { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 520px) {
+  [data-theme="retro"] .masthead,
+  [data-theme="retro"] main > section,
+  [data-theme="retro"] .status,
+  [data-theme="retro"] .side-section,
+  [data-theme="retro"] .site-footer { padding-left: 20px; padding-right: 20px; }
+  [data-theme="retro"] .jobs .archive > li { grid-template-columns: minmax(0, 1fr); grid-template-areas: "mark" "body"; gap: 0; }
+}
+
+/* ---------- Sidebar: status, contact, skills ---------- */
+
+[data-theme="retro"] .status { padding: 24px 24px 26px; }
+[data-theme="retro"] .portrait--photo { display: none; }
+[data-theme="retro"] .portrait--retro {
+  display: block;
+  aspect-ratio: 765 / 1024;
+  object-fit: fill;
+  border: 0;
+  outline: 4px solid #000;
+}
+[data-theme="retro"] .stats {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px 16px;
+  align-items: baseline;
+  margin: 22px 0 0;
+}
+[data-theme="retro"] .stats dt {
+  font-family: var(--r-head);
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--r-gold);
+}
+[data-theme="retro"] .stats dd { margin: 0; font-size: 18px; line-height: 1.5; }
+
+[data-theme="retro"] .label {
+  font-family: var(--r-head);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--r-gold);
+}
+[data-theme="retro"] .email { margin-top: 6px; font-size: 17px; }
+[data-theme="retro"] .link-row { flex-direction: column; gap: 4px; margin-top: 14px; font-size: 19px; line-height: 1.5; }
+[data-theme="retro"] .link-row li { position: relative; padding-left: 22px; }
+[data-theme="retro"] .link-row li:hover::before,
+[data-theme="retro"] .link-row li:focus-within::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4em;
+  width: 8px;
+  height: 14px;
+  background: var(--r-cursor) center / 100% 100% no-repeat;
+}
+
+[data-theme="retro"] .skills { display: block; list-style: none; margin: 0; padding: 0; font-size: 18px; line-height: 1.5; }
+[data-theme="retro"] .skills li::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 12px;
+  vertical-align: 0.2em;
+  background: var(--r-line);
+}
+
+/* ---------- Footer: the menu bar, with the way back ---------- */
+
+[data-theme="retro"] .site-footer {
+  margin: 32px 4px 4px;
+  padding: 10px 12px 10px 26px;
+  gap: 10px 24px;
+  font-family: var(--r-head);
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+[data-theme="retro"] .site-footer a { color: var(--r-text); }
+[data-theme="retro"] .site-footer a:hover { color: var(--r-gold); }
+[data-theme="retro"] .retro-toggle {
+  margin: 0 0 0 auto;
+  opacity: 1;
+  background: var(--r-ground);
+  box-shadow: inset 0 0 0 2px var(--r-frame);
+  color: var(--r-gold);
+}
+[data-theme="retro"] .retro-toggle .icon-floppy { display: none; }
+[data-theme="retro"] .retro-toggle .icon-back { display: block; }
+
 }
